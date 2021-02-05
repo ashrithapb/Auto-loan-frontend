@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./AccountCreation.css";
+import { signUp } from "./../features/action";
+import { useDispatch } from "react-redux";
 
 interface AccountCreationProps {
   submitForm: () => void;
@@ -17,6 +19,8 @@ const AccountCreation: React.FC<AccountCreationProps> = ({ submitForm }) => {
   });
   const [isApplyClicked, setIsApplyClicked] = useState<boolean>(false);
 
+  const dispatch = useDispatch();
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsApplyClicked(true);
@@ -29,6 +33,12 @@ const AccountCreation: React.FC<AccountCreationProps> = ({ submitForm }) => {
       return false;
     }
 
+    dispatch(
+      signUp({
+        email: formField.email,
+        password: formField.password,
+      })
+    );
     submitForm();
   };
   const updateField = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -41,7 +51,11 @@ const AccountCreation: React.FC<AccountCreationProps> = ({ submitForm }) => {
   return (
     <div className="accountCreation">
       <h1 className="accountCreation__heading">Create your Account</h1>
-      <form onSubmit={handleSubmit} className="accountCreation__form" noValidate>
+      <form
+        onSubmit={handleSubmit}
+        className="accountCreation__form"
+        noValidate
+      >
         <div className="accountCreation__div">
           <label className="accountCreation__label">Email</label>
           <input

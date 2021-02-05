@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./LoanQualification.css";
 import Marketing from "./Marketing";
 import NumberFormat from "react-number-format";
+import { useDispatch } from "react-redux";
+import { checkEligibility } from "./../features/action";
 
 interface LoanQualificationProps {
   message: string;
@@ -22,6 +24,8 @@ const LoanQualification: React.FC<LoanQualificationProps> = ({ message }) => {
     userCreditScore: 0,
   });
   const [isApplyClicked, setIsApplyClicked] = useState<boolean>(false);
+
+  const dispatch = useDispatch();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -46,6 +50,16 @@ const LoanQualification: React.FC<LoanQualificationProps> = ({ message }) => {
     ) {
       return false;
     }
+
+    dispatch(
+      checkEligibility({
+        autoPrice: newAutoprice,
+        autoMake: formField.autoMake,
+        autoModel: formField.autoModel,
+        userYearlyIncome: newIncome,
+        userCreditScore: formField.userCreditScore,
+      })
+    );
   };
   const updateField = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value }: any = e.target;

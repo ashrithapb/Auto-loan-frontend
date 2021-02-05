@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import AccountCreation from "./AccountCreation";
+import FormSuccess from "./FormSuccess";
 
-interface SignUpformProps {}
+const SignUpform: React.FC = () => {
+  const submitForm = () => {
+    setIsSubmitted(true);
+  };
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
 
-const SignUpform: React.FC<SignUpformProps> = ({}) => {
-  const submitForm = () => {};
-  return <AccountCreation submitForm={submitForm} />;
+  return (
+    <div className="signupForm">
+      {!isSubmitted ? (
+        <AccountCreation submitForm={submitForm} />
+      ) : (
+        <FormSuccess />
+      )}
+    </div>
+  );
 };
 
 export default SignUpform;

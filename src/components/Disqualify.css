@@ -9,6 +9,9 @@
 .disqualify__subheading {
   margin: 15px auto;
 }
+.disqualify__suggestion {
+  margin: 20px;
+}
 .disqualify__contactInfo {
   color: antiquewhite;
 }
