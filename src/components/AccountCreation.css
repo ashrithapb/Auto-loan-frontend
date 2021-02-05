@@ -1,0 +1,57 @@
+.accountCreation,
+.form {
+  width: 100%;
+  margin: auto;
+  background-color: #063d61;
+  color: white;
+  height: 100%;
+}
+.accountCreation__form {
+  width: 100%;
+  margin: auto;
+  max-width: 300px;
+}
+.accountCreation__heading {
+  text-align: center;
+  margin: 20px;
+  margin: 0;
+  padding: 20px;
+  color: darkturquoise;
+}
+.accountCreation {
+  width: 100%;
+  margin: auto;
+}
+.accountCreation__label {
+  display: block;
+}
+.accountCreation__div {
+  height: 100px;
+  width: 80%;
+  margin: auto;
+}
+.accountCreation__input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 8px 0;
+  width: 90%;
+}
+.accountCreation__div-btn {
+  text-align: center;
+}
+.accountCreation__btn {
+  margin: 10px 0;
+  text-align: center;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkturquoise;
+  color: #232121;
+  font-weight: 600;
+}
+.accountCreation__error {
+  color: orangered;
+  margin: 1px 0 4px 0;
+  font-size: 0.9rem;
+}
