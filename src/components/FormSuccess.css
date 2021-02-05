@@ -1,0 +1,14 @@
+.formSuccess {
+  text-align: center;
+  padding-top: 25px;
+}
+.formSuccess__message {
+  padding: 20px;
+  color: #9abf62;
+}
+.formSuccess__contactInfo {
+  font-weight: bold;
+}
+.formSuccess__img {
+  margin: 30px auto;
+}
