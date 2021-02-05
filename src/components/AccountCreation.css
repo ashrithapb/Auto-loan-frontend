@@ -18,6 +18,9 @@
   padding: 20px;
   color: darkturquoise;
 }
+.accountCreation__btn {
+  cursor: pointer;
+}
 .accountCreation {
   width: 100%;
   margin: auto;
