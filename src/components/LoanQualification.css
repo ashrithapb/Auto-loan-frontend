@@ -1,0 +1,80 @@
+.loanQualification {
+  width: 100%;
+  margin: auto;
+  max-width: 1000px;
+}
+.loanQualification__form {
+  width: 100%;
+  margin: auto;
+  max-width: 300px;
+}
+.loanQualification__heading {
+  text-align: center;
+  color: darkkhaki;
+  margin: 25px 5px;
+}
+.loanQualification__form-heading {
+  text-align: center;
+  margin: 10px;
+  margin: 0;
+  padding: 20px;
+  color: darkturquoise;
+}
+.loanQualification {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  padding-bottom: 30px;
+}
+.loanQualification__label {
+  display: block;
+}
+.loanQualification__div {
+  height: 85px;
+  width: 80%;
+  margin: auto;
+}
+.loanQualification__input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+  width: 90%;
+}
+.loanQualification__div-btn {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.loanQualification__btn {
+  margin: 8px 0;
+  text-align: center;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkturquoise;
+  color: #232121;
+  font-weight: 600;
+}
+.loanQualification__error {
+  color: orangered;
+  margin: 1px 0 4px 0;
+  font-size: 0.9rem;
+}
+.loanQualification__marketing {
+  width: 50%;
+  margin: 0 auto;
+}
+.loanQualification__division {
+  background-color: darkslategray;
+}
+.loanQualification__btn {
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .loanQualification {
+    display: block;
+  }
+  .loanQualification__marketing {
+    width: 90%;
+  }
+}

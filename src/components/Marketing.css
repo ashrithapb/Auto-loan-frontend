@@ -1,0 +1,18 @@
+.marketing {
+    padding: 15px;
+  }
+  .marketing__heading{
+    text-align: center;
+      margin: 10px;
+      margin: 0;
+      padding: 20px;
+      color: darkturquoise;
+  }
+  .marketing__img {
+    max-width: 80%;
+    margin: 30px;
+  }
+  .marketing__div-img {
+    text-align: center;
+  }
+  
