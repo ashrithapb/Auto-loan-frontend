@@ -1,0 +1,17 @@
+.disqualify {
+  text-align: center;
+  padding-top: 25px;
+}
+.disqualify__status {
+  padding: 20px;
+  color: red;
+}
+.disqualify__subheading {
+  margin: 15px auto;
+}
+.disqualify__contactInfo {
+  color: antiquewhite;
+}
+.disqualify__img {
+  margin: 30px auto;
+}
